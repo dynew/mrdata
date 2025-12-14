@@ -1,71 +1,233 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Description" content="本页面为 iOS App 的官方技术支持网站，提供使用帮助、常见问题、联系方式与隐私政策。">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.2">
-  <style type="text/css">
-    body {background-color: #f2f2f5}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: #5b5b60; -webkit-text-stroke: #5b5b60; background-color: #ffffff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #5b5b60; -webkit-text-stroke: #5b5b60; min-height: 15.0px}
-    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'PingFang SC'; color: #161618; -webkit-text-stroke: #161618}
-    p.p8 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #094ec0; -webkit-text-stroke: #094ec0}
-    p.p9 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'PingFang SC'; color: #094ec0; -webkit-text-stroke: #094ec0}
-    p.p10 {margin: 0.0px 0.0px 14.0px 0.0px; text-align: center; font: 14.0px 'Helvetica Neue'; color: #5b5b60; -webkit-text-stroke: #5b5b60}
-    p.p11 {margin: 0.0px 0.0px 14.0px 0.0px; text-align: center; font: 14.0px 'PingFang SC'; color: #5b5b60; -webkit-text-stroke: #5b5b60}
-    li.li6 {margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px 'PingFang SC'; color: #161618; -webkit-text-stroke: #161618}
-    li.li7 {margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618}
-    span.s1 {font-kerning: none; background-color: #ffffff}
-    span.s2 {font: 24.0px '.PingFang UI SC'; font-kerning: none; background-color: #ffffff}
-    span.s3 {font-kerning: none}
-    span.s4 {font: 12.0px 'Helvetica Neue'; font-kerning: none}
-    span.s5 {font: 20.0px 'PingFang SC'; font-kerning: none; background-color: #ffffff}
-    span.s6 {font: 12.0px 'Helvetica Neue'; font-kerning: none; background-color: #ffffff}
-    span.s7 {font: 20.0px 'Helvetica Neue'; font-kerning: none; background-color: #ffffff}
-    span.s8 {font: 12.0px 'Helvetica Neue'; background-color: #ffffff; -webkit-text-stroke: 0px #000000}
-    span.s9 {font: 12.0px '.AppleSimplifiedChineseFont'; font-kerning: none; background-color: #ffffff}
-    span.s10 {background-color: #ffffff; -webkit-text-stroke: 0px #000000}
-    span.s11 {font: 12.0px 'PingFang SC'; font-kerning: none; background-color: #ffffff}
-    span.s12 {font: 12.0px 'PingFang SC'; font-kerning: none; color: #161618; background-color: #ffffff; -webkit-text-stroke: 0px #161618}
-    span.s13 {font-kerning: none; color: #161618; background-color: #ffffff; -webkit-text-stroke: 0px #161618}
-    span.s14 {font-kerning: none; color: #094ec0; -webkit-text-stroke: 0px #094ec0}
-    span.s15 {font: 12.0px 'PingFang SC'; font-kerning: none; color: #094ec0; -webkit-text-stroke: 0px #094ec0}
-    span.s16 {font: 14.0px 'Helvetica Neue'; font-kerning: none; background-color: #ffffff}
-    ul.ul1 {list-style-type: disc}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MrData 技术支持</title>
+  <meta name="description" content="MrData iOS App 官方技术支持网站，提供产品介绍、常见问题、使用说明、联系方式与隐私政策。" />
+
+  <style>
+    :root {
+      --bg: #f5f6fa;
+      --card-bg: #ffffff;
+      --text-main: #1c1c1e;
+      --text-secondary: #5a5a5f;
+      --brand: #2563eb;
+      --border: #e5e7eb;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0 0 8px 0;
+      letter-spacing: 0.3px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    section h2 {
+      font-size: 22px;
+      margin: 0 0 16px 0;
+      border-left: 4px solid var(--brand);
+      padding-left: 12px;
+    }
+
+    section p {
+      margin: 0 0 12px 0;
+      color: var(--text-main);
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 12px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+
+    .faq-item {
+      margin-bottom: 14px;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .faq-a {
+      color: var(--text-secondary);
+    }
+
+    .contact-box {
+      background: #f9fafb;
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 32px;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #111827;
+        --text-main: #e5e7eb;
+        --text-secondary: #9ca3af;
+        --brand: #60a5fa;
+        --border: #1f2933;
+      }
+
+      section {
+        box-shadow: none;
+      }
+
+      .contact-box {
+        background: #0b1220;
+      }
+    }
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618"><span class="s1"><b>【MrData】 </b></span><span class="s2"><b>技术支持</b><b></b></span></h1>
-<p class="p2"><span class="s3">感谢你使用本</span><span class="s4"> App</span><span class="s3">。以下是使用帮助、常见问题以及联系方式。</span></p>
-<p class="p3"><span class="s3"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; color: #161618; -webkit-text-stroke: #161618"><span class="s5"><b>MrData简介</b><b></b></span></h2>
-<p class="p5"><span class="s1">本</span><span class="s6"> App </span><span class="s1">旨在帮助用户更高效地完成日常任务。我们致力于提供稳定、安全、</span><span class="s6"> </span><span class="s1">并符合</span><span class="s6"> Apple </span><span class="s1">平台规范的使用体验。</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; color: #161618; -webkit-text-stroke: #161618"><span class="s5"><b>常见问题（</b></span><span class="s7"><b>FAQ</b></span><span class="s5"><b>）</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li6"><span class="s8"><b></b></span><span class="s6"><b>Q</b></span><span class="s9"><b>：</b></span><span class="s6"><b>MrData</b></span><span class="s9"><b>无法正常启动怎么办？</b></span><span class="s4"><br>
-</span><span class="s6">A</span><span class="s1">：请确认系统版本符合</span><span class="s6"> App Store </span><span class="s1">页面所标注的最低要求，并尝试重启设备。</span></li>
-  <li class="li6"><span class="s8"><b></b></span><span class="s6"><b>Q</b></span><span class="s9"><b>：数据会不会丢失？</b></span><span class="s4"><br>
-</span><span class="s6">A</span><span class="s1">：</span><span class="s6"><b>MrData</b></span><span class="s1">使用系统提供的安全机制存储数据。如卸载</span><span class="s6"> <b>MrData</b></span><span class="s1">，部分本地数据可能被删除。</span></li>
-  <li class="li6"><span class="s8"><b></b></span><span class="s6"><b>Q</b></span><span class="s9"><b>：遇到</b></span><span class="s6"><b> Bug </b></span><span class="s9"><b>如何反馈？</b></span><span class="s4"><br>
-</span><span class="s6">A</span><span class="s1">：请通过下方“联系我们”中的邮箱与我们取得联系。</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; color: #161618; -webkit-text-stroke: #161618"><span class="s5"><b>使用与故障排查</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li7"><span class="s10"></span><span class="s11">确保</span><span class="s1"> iOS </span><span class="s11">版本为</span><span class="s1"> App Store </span><span class="s11">中标注的受支持版本</span></li>
-  <li class="li6"><span class="s8"></span><span class="s1">升级到最新版本的</span><span class="s6"> <b>MrData</b><b></b></span></li>
-  <li class="li6"><span class="s8"></span><span class="s1">检查系统权限设置（如网络、通知等）</span></li>
-  <li class="li6"><span class="s8"></span><span class="s1">如问题持续存在，请联系技术支持</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; color: #161618; -webkit-text-stroke: #161618"><span class="s5"><b>联系我们</b><b></b></span></h2>
-<p class="p8"><span class="s12">技术支持邮箱：</span><span class="s13"> <a href="mailto:support@example.com"><span class="s14">support@example.com</span></a></span></p>
-<p class="p5"><span class="s1">我们通常会在</span><span class="s6"> 1–3 </span><span class="s1">个工作日内回复。</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; color: #161618; -webkit-text-stroke: #161618"><span class="s5"><b>隐私政策</b><b></b></span></h2>
-<p class="p5"><span class="s1">我们非常重视你的隐私。</span><span class="s6">App </span><span class="s1">仅在实现核心功能所必需的范围内收集信息，</span><span class="s6"> </span><span class="s1">并遵循</span><span class="s6"> Apple </span><span class="s1">的《</span><span class="s6">App Store Review Guidelines</span><span class="s1">》和相关隐私法规。</span></p>
-<p class="p9"><span class="s1"><a href="file:///Users/lwf/Desktop/%E6%88%91%E7%9A%84%E5%BA%94%E7%94%A8/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E7%BD%91%E7%AB%99/privacy.html">查看完整隐私政策<span class="s15"></span></a></span></p>
-<p class="p10"><span class="s1">© 2025 Liu Wenfei</span></p>
-<p class="p11"><span class="s1">本网站为</span><span class="s16"> MrData</span><span class="s1">技术支持用途</span></p>
+  <div class="container">
+    <header>
+      <h1>MrData 技术支持</h1>
+      <p>官方支持页面 · 使用帮助 · 常见问题 · 隐私说明</p>
+    </header>
+
+    <section>
+      <h2>产品简介</h2>
+      <p>
+        MrData 是一款专为个人设计的信息管理工具，帮助您高效存储、整理和检索文字、文件、音视频等各类信息，
+        同时最大程度保障您的数据安全与隐私。
+      </p>
+      <p>
+        所有数据仅存储于您的设备、iCloud 云盘或个人 NAS 中，完全避免传统中心化云服务可能带来的数据审查、
+        丢失或泄露风险。
+      </p>
+      <p>
+        MrData 使用 Apple ID 作为唯一身份标识，无需注册账号。我们不收集、不保存、也无法访问您的任何个人数据。
+      </p>
+      <p>
+        macOS 版本正在开发中，未来将支持 iPhone、iPad 与 Mac 之间的实时同步。
+      </p>
+    </section>
+
+    <section>
+      <h2>常见问题（FAQ）</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Q：MrData 支持语音输入吗？</div>
+        <div class="faq-a">A：支持。您可以使用系统语音输入，也可以连接蓝牙键盘进行文字输入。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q：信息很多时，是否还能快速找到内容？</div>
+        <div class="faq-a">
+          A：可以。MrData 采用树状分类标签结合全文搜索的方式，即使有成千上万条信息，也能快速定位。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q：iCloud 云盘和 NAS 是什么关系？</div>
+        <div class="faq-a">
+          A：附件类文件可选择存储在 iCloud 云盘或个人 NAS 中（二选一）。
+          您可随时在两者之间手动迁移文件，数据始终完全由您掌控。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>使用与故障排查</h2>
+      <ul>
+        <li>请确保您的 iOS 版本符合 App Store 中标注的最低系统要求</li>
+        <li>建议始终升级到最新版本的 MrData</li>
+        <li>系统设置中需开启 iCloud 云盘与麦克风权限（语音输入所需）</li>
+        <li>部分第三方语音服务可能存在试用或收费限制，Apple 系统语音朗读永久免费</li>
+        <li>如问题仍无法解决，请通过下方联系方式与我们取得联系</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>联系我们</h2>
+      <div class="contact-box">
+        <p>技术支持邮箱：<a href="mailto:mrdata@dynew.com">mrdata@dynew.com</a></p>
+        <p>我们通常会在 14 个工作日内回复您的邮件。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>隐私政策</h2>
+      <p>
+        MrData 严格遵循 Apple《App Store Review Guidelines》及相关隐私法规。
+        当前版本不收集、不上传任何用户数据，包括存储内容、账号信息或使用行为。
+      </p>
+      <p>
+        <a href="privacy.html">查看完整隐私政策</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 Liu Wenfei</p>
+      <p>本网站仅用于 MrData App 官方技术支持</p>
+    </footer>
+  </div>
 </body>
 </html>
