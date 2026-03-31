@@ -1,82 +1,162 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Description" content="MrData iOS App 官方技术支持网站，提供产品介绍、常见问题、使用说明、联系方式与隐私政策。">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    body {background-color: #f2f4f9}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'PingFang SC'; color: #48484c; -webkit-text-stroke: #48484c}
-    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'PingFang SC'; color: #151517; -webkit-text-stroke: #151517}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #151517; -webkit-text-stroke: #151517; background-color: #ffffff}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #151517; -webkit-text-stroke: #151517; min-height: 15.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.SF NS'; color: #151517; -webkit-text-stroke: #151517}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: #48484c; -webkit-text-stroke: #48484c}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC Semibold'; color: #151517; -webkit-text-stroke: #151517}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: #48484c; -webkit-text-stroke: #48484c; background-color: #ffffff}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #48484c; -webkit-text-stroke: #48484c; min-height: 15.0px}
-    p.p13 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #1d48e6; -webkit-text-stroke: #1d48e6}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: #151517; -webkit-text-stroke: #151517}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang SC'; color: #1d48e6; -webkit-text-stroke: #1d48e6}
-    p.p16 {margin: 0.0px 0.0px 6.0px 0.0px; text-align: center; font: 14.0px 'Helvetica Neue'; color: #48484c; -webkit-text-stroke: #48484c}
-    li.li12 {margin: 0.0px 0.0px 10.0px 0.0px; font: 12.0px 'PingFang SC'; color: #151517; -webkit-text-stroke: #151517}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 32.0px '.PingFang UI SC'; font-kerning: none}
-    span.s3 {font: 16.0px 'Helvetica Neue'; font-kerning: none}
-    span.s4 {font: 16.0px '.CJK Symbols Fallback SC'; font-kerning: none}
-    span.s5 {font: 22.0px 'PingFang SC'; font-kerning: none; background-color: #ffffff}
-    span.s6 {font: 12.0px 'Helvetica Neue'; font-kerning: none; background-color: #ffffff}
-    span.s7 {font-kerning: none; background-color: #ffffff}
-    span.s8 {font: 12.0px 'PingFang SC'; font-kerning: none}
-    span.s9 {font: 22.0px 'Helvetica Neue'; font-kerning: none; background-color: #ffffff}
-    span.s10 {font: 12.0px '.AppleSimplifiedChineseFont'; font-kerning: none; background-color: #ffffff}
-    span.s11 {font: 12.0px '.SF NS'; font-kerning: none; background-color: #ffffff}
-    span.s12 {font: 12.0px 'Helvetica Neue'; font-kerning: none}
-    span.s13 {font: 12.0px 'Helvetica Neue'; background-color: #ffffff; -webkit-text-stroke: 0px #000000}
-    span.s14 {font: 12.0px 'PingFang SC'; font-kerning: none; color: #151517; background-color: #f7f9fa; -webkit-text-stroke: 0px #151517}
-    span.s15 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #1d48e6; -webkit-text-stroke: 0px #1d48e6}
-    span.s16 {font-kerning: none; background-color: #f7f9fa}
-    span.s17 {font: 12.0px 'Helvetica Neue'; font-kerning: none; background-color: #f7f9fa}
-    span.s18 {font-kerning: none; color: #1d48e6; -webkit-text-stroke: 0px #1d48e6}
-    span.s19 {font: 14.0px 'PingFang SC'; font-kerning: none}
-    ul.ul1 {list-style-type: disc}
-  </style>
+    <meta charset="UTF-8">
+
+    <!-- 关键：自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MrData 技术支持</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            background-color: #f5f5f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 28px;
+            font-size: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 6px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 18px;
+        }
+
+        .faq-item strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            margin-top: 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
 </head>
+
 <body>
-<h1 style="margin: 0.0px 0.0px 8.0px 0.0px; text-align: center; font: 32.0px 'Helvetica Neue'; color: #151517; -webkit-text-stroke: #151517"><span class="s1"><b>MrData </b></span><span class="s2"><b>技术支持</b><b></b></span></h1>
-<p class="p2"><span class="s1">官方支持页面</span><span class="s3"> </span><span class="s4">·</span><span class="s3"> </span><span class="s1">使用帮助</span><span class="s3"> </span><span class="s4">·</span><span class="s3"> </span><span class="s1">常见问题</span><span class="s3"> </span><span class="s4">·</span><span class="s3"> </span><span class="s1">隐私说明</span></p>
-<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; color: #151517; -webkit-text-stroke: #151517"><span class="s5"><b>产品简介</b><b></b></span></h2>
-<p class="p4"><span class="s6">MrData </span><span class="s7">是一款专为个人设计的信息管理工具，帮助您高效存储、整理和检索文字、文件、音视频等各类信息，</span><span class="s6"> </span><span class="s7">同时最大程度保障您的数据安全与隐私。</span></p>
-<p class="p4"><span class="s7">所有数据仅存储于您的设备、</span><span class="s6">iCloud </span><span class="s7">云盘或个人</span><span class="s6"> NAS </span><span class="s7">中，完全避免传统中心化云服务可能带来的数据审查、</span><span class="s6"> </span><span class="s7">丢失或泄露风险。</span></p>
-<p class="p4"><span class="s6">MrData </span><span class="s7">使用</span><span class="s6"> Apple ID </span><span class="s7">作为唯一身份标识，无需注册账号。我们不收集、不保存、也无法访问您的任何个人数据。</span></p>
-<p class="p5"><span class="s1">MrData有macOS和iOS两个版本</span><span class="s8">，支持</span><span class="s1"> iPhone</span><span class="s8">、</span><span class="s1">iPad </span><span class="s8">与</span><span class="s1"> Mac </span><span class="s8">之间基于Apple ID的数据实时同步。</span></p>
-<p class="p6"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; color: #151517; -webkit-text-stroke: #151517"><span class="s5"><b>常见问题（</b></span><span class="s9"><b>FAQ</b></span><span class="s5"><b>）</b><b></b></span></h2>
-<p class="p7"><span class="s7"><b>Q</b></span><span class="s10"><b>：两个版本的</b></span><span class="s7"><b>MrData有什么主要区别</b></span><span class="s10"><b>？</b><b></b></span></p>
-<p class="p8"><span class="s6">A</span><span class="s7">：iOS版本支持语音输入。您可以使用系统语音输入，也可以连接蓝牙键盘进行文字输入，尽量减少iPhone上文字输入的不易。macOS版本则使用传统基于键盘的输入法进行文字输入。另外，二者的界面区别很大，因为二者面对的设备屏幕大小差别很大。</span></p>
-<p class="p9"><span class="s11"><b>Q</b></span><span class="s10"><b>：信息很多时，是否还能快速找到内容？</b><b></b></span></p>
-<p class="p8"><span class="s6">A</span><span class="s7">：可以。</span><span class="s6">MrData </span><span class="s7">采用树状分类标签结合全文搜索的方式，即使有成千上万条信息，也能快速定位。</span></p>
-<p class="p7"><span class="s7"><b>Q</b></span><span class="s10"><b>：</b></span><span class="s7"><b>iCloud </b></span><span class="s10"><b>云盘和</b></span><span class="s7"><b> NAS </b></span><span class="s10"><b>是什么关系？</b><b></b></span></p>
-<p class="p10"><span class="s12">A</span><span class="s1">：记录中的附件类文件可选择存储在</span><span class="s12"> iCloud </span><span class="s1">云盘或个人</span><span class="s12"> NAS </span><span class="s1">中（二选一）。</span><span class="s12"> </span><span class="s1">您可随时在两者之间手动迁移文件，数据始终完全由您自己掌控。</span></p>
-<p class="p11"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; color: #151517; -webkit-text-stroke: #151517"><span class="s5"><b>使用与故障排查</b><b></b></span></h2>
-<ul class="ul1">
-  <li class="li12"><span class="s13"></span><span class="s7">请确保您的</span><span class="s6"> iOS </span><span class="s7">版本或macOS版本符合</span><span class="s6"> App Store </span><span class="s7">中标注的最低系统要求</span></li>
-  <li class="li12"><span class="s13"></span><span class="s7">建议始终升级到最新版本的</span><span class="s6"> MrData</span></li>
-  <li class="li12"><span class="s13"></span><span class="s7">iOS版本需开启麦克风权限（语音输入所需）。如果记录中的附件需要存储在iCloud云盘中，两个版本的系统设置都需开启</span><span class="s6"> iCloud </span><span class="s7">云盘权限，</span></li>
-  <li class="li12"><span class="s13">iOS上</span><span class="s7">的第三方语音服务可能存在试用或收费限制，</span><span class="s6">Apple </span><span class="s7">系统语音朗读永久免费</span></li>
-  <li class="li12"><span class="s13"></span><span class="s7">如问题仍无法解决，请通过下方联系方式与我们取得联系</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; color: #151517; -webkit-text-stroke: #151517"><span class="s5"><b>联系我们</b><b></b></span></h2>
-<p class="p13"><span class="s14">技术支持邮箱：<a href="mailto:mrdata@dynew.com"><span class="s15">mrdata@dynew.com</span></a></span></p>
-<p class="p14"><span class="s16">我们通常会在</span><span class="s17"> 14 </span><span class="s16">个工作日内回复您的邮件。</span></p>
-<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; color: #151517; -webkit-text-stroke: #151517"><span class="s5"><b>隐私政策</b><b></b></span></h2>
-<p class="p4"><span class="s6">MrData </span><span class="s7">严格遵循</span><span class="s6"> Apple</span><span class="s7">《</span><span class="s6">App Store Review Guidelines</span><span class="s7">》及相关隐私法规。</span><span class="s6"> </span><span class="s7">当前版本不收集、不上传任何用户数据，包括存储内容、账号信息或使用行为。</span></p>
-<p class="p15"><span class="s7"><a href="file:///Users/lwf/Desktop/%E6%88%91%E7%9A%84%E5%BA%94%E7%94%A8/MrData4iOS_All/%E5%85%B6%E5%AE%83/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E7%BD%91%E7%AB%99/privacy.html">查看完整隐私政策<span class="s18"></span></a></span></p>
-<p class="p16"><span class="s1">© 2026 Liu Wenfei</span></p>
-<p class="p16"><span class="s19">本网站仅用于</span><span class="s1"> MrData App </span><span class="s19">官方技术支持</span></p>
+<div class="container">
+
+    <h1>MrData 技术支持</h1>
+    <div class="subtitle">官方支持页面 · 使用帮助 · 常见问题 · 隐私说明</div>
+
+    <h2>产品简介</h2>
+    <p>
+        MrData 是一款专为个人设计的信息管理工具，帮助您高效存储、整理和检索文字、文件、音视频等各类信息，
+        同时最大程度保障您的数据安全与隐私。
+    </p>
+    <p>
+        所有数据仅存储于您的设备、iCloud 云盘或个人 NAS 中，完全避免传统中心化云服务可能带来的数据审查、
+        丢失或泄露风险。
+    </p>
+    <p>
+        MrData 使用 Apple ID 作为唯一身份标识，无需注册账号。我们不收集、不保存、也无法访问您的任何个人数据。
+    </p>
+    <p>
+        MrData 有 macOS 和 iOS 两个版本，支持 iPhone、iPad 与 Mac 之间基于 Apple ID 的数据实时同步。
+    </p>
+
+    <h2>常见问题（FAQ）</h2>
+
+    <div class="faq-item">
+        <strong>Q：两个版本的 MrData 有什么主要区别？</strong>
+        <p>
+            A：iOS 版本支持语音输入。您可以使用系统语音输入，也可以连接蓝牙键盘进行文字输入，
+            尽量减少 iPhone 上文字输入的不便。macOS 版本则使用传统基于键盘的输入法进行文字输入。
+            另外，二者的界面区别很大，因为二者面对的设备屏幕大小差别很大。
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Q：信息很多时，是否还能快速找到内容？</strong>
+        <p>
+            A：可以。MrData 采用树状分类标签结合全文搜索的方式，即使有成千上万条信息，也能快速定位。
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Q：iCloud 云盘和 NAS 是什么关系？</strong>
+        <p>
+            A：记录中的附件类文件可选择存储在 iCloud 云盘或个人 NAS 中（二选一）。
+            您可随时在两者之间手动迁移文件，数据始终完全由您自己掌控。
+        </p>
+    </div>
+
+    <h2>使用与故障排查</h2>
+    <ul>
+        <li>请确保您的 iOS 版本或 macOS 版本符合 App Store 中标注的最低系统要求</li>
+        <li>建议始终升级到最新版本的 MrData</li>
+        <li>iOS 版本需开启麦克风权限（语音输入所需）</li>
+        <li>如记录中的附件需存储在 iCloud 云盘中，请确保系统已开启 iCloud 云盘权限</li>
+        <li>iOS 上的第三方语音服务可能存在试用或收费限制，Apple 系统语音朗读永久免费</li>
+        <li>如问题仍无法解决，请通过下方联系方式与我们取得联系</li>
+    </ul>
+
+    <h2>联系我们</h2>
+    <div class="contact">
+	<p>微信公众号：MrData数据先生</p>
+        <p>技术支持邮箱：
+ 	   <a href="mailto:mrdata@dynew.com">mrdata@dynew.com</a>
+	</p>
+        <p>我们通常会在 14 个工作日内回复您的邮件。</p>
+    </div>
+
+    <h2>隐私政策</h2>
+    <p>
+        MrData 严格遵循 Apple《App Store Review Guidelines》及相关隐私法规。
+        当前版本不收集、不上传任何用户数据，包括存储内容、账号信息或使用行为。
+    </p>
+    <p>查看完整隐私政策</p>
+
+    <div class="footer">
+        © 2026 Liu Wenfei<br>
+        本网站仅用于 MrData App 官方技术支持
+    </div>
+
+</div>
 </body>
 </html>
