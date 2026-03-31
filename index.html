@@ -2,13 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-
-    <!-- 关键：自适应 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>MrData 技术支持</title>
 
     <style>
+        /* 基础字体大小 */
+        html {
+            font-size: 16px; /* macOS 默认 */
+        }
+
         body {
             margin: 0;
             padding: 16px;
@@ -27,26 +29,33 @@
         }
 
         h1 {
-            font-size: 26px;
-            margin-bottom: 6px;
+            font-size: 1.6rem;
         }
 
         .subtitle {
             color: #666;
-            font-size: 14px;
+            font-size: 0.9rem;
             margin-bottom: 20px;
         }
 
         h2 {
             margin-top: 28px;
-            font-size: 20px;
+            font-size: 1.3rem;
             border-bottom: 1px solid #eee;
             padding-bottom: 6px;
         }
 
         p {
-            font-size: 16px;
+            font-size: 1rem;
             margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         .faq-item {
@@ -58,22 +67,42 @@
             margin-bottom: 4px;
         }
 
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
         .contact {
             margin-top: 10px;
         }
 
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .footer {
             margin-top: 30px;
-            font-size: 13px;
+            font-size: 0.8rem;
             color: #888;
+        }
+
+        /* 针对小屏幕 (iPhone) 放大字体 */
+        @media (max-width: 480px) {
+            html {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -86,12 +115,10 @@
 
     <h2>产品简介</h2>
     <p>
-        MrData 是一款专为个人设计的信息管理工具，帮助您高效存储、整理和检索文字、文件、音视频等各类信息，
-        同时最大程度保障您的数据安全与隐私。
+        MrData 是一款专为个人设计的信息管理工具，帮助您高效存储、整理和检索文字、文件、音视频等各类信息，同时最大程度保障您的数据安全与隐私。
     </p>
     <p>
-        所有数据仅存储于您的设备、iCloud 云盘或个人 NAS 中，完全避免传统中心化云服务可能带来的数据审查、
-        丢失或泄露风险。
+        所有数据仅存储于您的设备、iCloud 云盘或个人 NAS 中，完全避免传统中心化云服务可能带来的数据审查、丢失或泄露风险。
     </p>
     <p>
         MrData 使用 Apple ID 作为唯一身份标识，无需注册账号。我们不收集、不保存、也无法访问您的任何个人数据。
@@ -105,9 +132,7 @@
     <div class="faq-item">
         <strong>Q：两个版本的 MrData 有什么主要区别？</strong>
         <p>
-            A：iOS 版本支持语音输入。您可以使用系统语音输入，也可以连接蓝牙键盘进行文字输入，
-            尽量减少 iPhone 上文字输入的不便。macOS 版本则使用传统基于键盘的输入法进行文字输入。
-            另外，二者的界面区别很大，因为二者面对的设备屏幕大小差别很大。
+            A：iOS 版本支持语音输入。您可以使用系统语音输入，也可以连接蓝牙键盘进行文字输入，尽量减少 iPhone 上文字输入的不便。macOS 版本则使用传统基于键盘的输入法进行文字输入。 另外，二者的界面区别很大，因为二者面对的设备屏幕大小差别很大。
         </p>
     </div>
 
@@ -121,8 +146,7 @@
     <div class="faq-item">
         <strong>Q：iCloud 云盘和 NAS 是什么关系？</strong>
         <p>
-            A：记录中的附件类文件可选择存储在 iCloud 云盘或个人 NAS 中（二选一）。
-            您可随时在两者之间手动迁移文件，数据始终完全由您自己掌控。
+            A：记录中的附件类文件可选择存储在 iCloud 云盘或个人 NAS 中（二选一）。您可随时在两者之间手动迁移文件，数据始终完全由您自己掌控。
         </p>
     </div>
 
@@ -138,22 +162,21 @@
 
     <h2>联系我们</h2>
     <div class="contact">
-	<p>微信公众号：MrData数据先生</p>
+        <p>微信公众号：MrData数据先生</p>
         <p>技术支持邮箱：
- 	   <a href="mailto:mrdata@dynew.com">mrdata@dynew.com</a>
-	</p>
+            <a href="mailto:mrdata@dynew.com">mrdata@dynew.com</a>
+        </p>
         <p>我们通常会在 14 个工作日内回复您的邮件。</p>
     </div>
 
     <h2>隐私政策</h2>
     <p>
-        MrData 严格遵循 Apple《App Store Review Guidelines》及相关隐私法规。
-        当前版本不收集、不上传任何用户数据，包括存储内容、账号信息或使用行为。
+        MrData 严格遵循 Apple《App Store Review Guidelines》及相关隐私法规。当前版本不收集、不上传任何用户数据，包括存储内容、账号信息或使用行为。
     </p>
-    <p>查看完整隐私政策</p>
+    <p><a href="#">查看完整隐私政策</a></p>
 
     <div class="footer">
-        © 2026 Liu Wenfei<br>
+        © 2026 LIU, WENFEI<br>
         本网站仅用于 MrData App 官方技术支持
     </div>
 
